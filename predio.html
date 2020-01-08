@@ -14,16 +14,16 @@
     <div class="container">
 
         <div class="menu">
-            <button onclick="primeiro()">
+            <button onclick="mudarAndar('Primeiro andar', 1, 'red')">
                 1
             </button>
-            <button onclick="segundo()">
+            <button onclick="mudarAndar('Segundo andar', 2, 'blue')">
                 2
             </button>
-            <button onclick="terceiro()">
+            <button onclick="mudarAndar('Terceiro andar', 3, 'green')">
                 3
             </button>
-            <button onclick="quarto()">
+            <button onclick="mudarAndar('Quarto andar', 4, 'orange')">
                 4
             </button>
         </div>
@@ -34,7 +34,8 @@
         </div>
 
         <div class="menu andar">
-            <p id="numeroAndar">Andar do prédio</p>
+            <p id="nomeAndar">Andar do prédio</p>
+            <p id="numeroAndar">0</p>
         </div>
 
     </div>
