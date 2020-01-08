@@ -1,30 +1,34 @@
 body {
     margin: 0;
     padding: 0;
-}
-.menu {
-    background-color: grey;
-    height: 640px;
-    width: 370px;
-    display: flex;
-    align-items: center;
-}
-.container {
+    position: absolute;
     width: 100%;
     height: 100%;
+}
+
+.container {
     display: flex;
-    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    background-color: rgb(179, 130, 154);
+    width: 20%;
+}
+.menu button {
+    display: block;
+}
+
+.middleArea {
+    background-color: khaki;
+    width: 60%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-         
 }
-.cinza {
+.box {
     background-color: grey;
     width: 30px;
     height: 300px;
-    display: flex;
-    position: absolute;
-    right: 400px;
-    bottom: 140px;
 }
