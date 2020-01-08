@@ -31,6 +31,13 @@ body {
     background-color: grey;
     width: 30px;
     height: 300px;
+    display: flex;
+    align-items: center;
+}
+.miniBox {
+    background-color: yellow;
+    width: 30px;
+    height: 100px;
 }
 
 .andar p {
@@ -38,4 +45,21 @@ body {
 }
 .andar h1 {
     text-align: center;
+}
+
+.primeiroAndar {
+    background-color: pink;
+    width: 30px;
+    height: 100px;
+}
+.segundoAndar {
+    background-color: tomato;
+    width: 30px;
+    height: 100px;
+}
+.terceiroAndar {
+    background-color: violet;
+}
+.quartoAndar {
+    background-color: teal;
 }
