@@ -7,7 +7,7 @@ function mudarAndar(value, number, color, classe) {
     numero.style.color = color;
 
     var mudarClasse = document.getElementById("miniBox");
-    mudarClasse.classList.add(classe);
+    mudarClasse.className = classe;
 
 }
 

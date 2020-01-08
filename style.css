@@ -34,8 +34,7 @@ body {
     display: flex;
     align-items: center;
 }
-.miniBox {
-    background-color: yellow;
+#miniBox {
     width: 30px;
     height: 100px;
 }
@@ -47,6 +46,9 @@ body {
     text-align: center;
 }
 
+.terreo {
+    background-color: yellow;
+}
 .primeiroAndar {
     background-color: pink;
     width: 30px;
@@ -59,7 +61,11 @@ body {
 }
 .terceiroAndar {
     background-color: violet;
+    width: 30px;
+    height: 100px;
 }
 .quartoAndar {
     background-color: teal;
+    width: 30px;
+    height: 100px;
 }
