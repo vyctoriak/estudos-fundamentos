@@ -29,43 +29,67 @@ body {
 }
 .box {
     background-color: grey;
-    width: 30px;
-    height: 300px;
+    width: 70px;
+    height: 400px;
     display: flex;
     align-items: center;
+    position: relative;
 }
 #miniBox {
-    width: 30px;
+    display: flex;
+    position: absolute;
+    width: 70px;
     height: 100px;
+    transition: all 1.0s;
+    overflow: hidden;
 }
 
-.andar p {
-    text-align: center;
+#door1, #door2{
+    background-color: black;
+    width: 35px;
+    height: 100px;
+    transition: all 1.0s;
 }
-.andar h1 {
+
+.door { 
+    background-color: black;
+    width: 35px;
+    height: 100px;
+    transition: all 1.0s;
+}
+
+.open-left {
+    margin-right: 40px;
+}
+.open-rigth {
+    margin-left: 40px;
+}
+
+.andar {
     text-align: center;
 }
 
 .terreo {
+    bottom: 0;
     background-color: yellow;
 }
 .primeiroAndar {
     background-color: pink;
-    width: 30px;
-    height: 100px;
+    bottom: 0;
 }
 .segundoAndar {
     background-color: tomato;
-    width: 30px;
-    height: 100px;
+    bottom: 100px;
 }
 .terceiroAndar {
     background-color: violet;
-    width: 30px;
-    height: 100px;
+    bottom: 200px;
 }
 .quartoAndar {
     background-color: teal;
-    width: 30px;
-    height: 100px;
+    bottom: 300px;
+}
+
+.logPassageiros {
+    text-align: center;
 }

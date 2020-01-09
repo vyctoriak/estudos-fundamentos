@@ -26,11 +26,21 @@
             <button onclick="mudarAndar('Quarto andar', 4, 'orange', 'quartoAndar')">
                 4
             </button>
+
+            <div class="logPassageiros">
+                <p id="pessoaElevador"></p>
+            </div>
         </div>
 
         <div class="middleArea">
             <div class="box">
-                <div id="miniBox" class="terreo">
+                <div id="miniBox" class="terreo" >
+                    <div id="door1" class="door">
+
+                    </div>
+                    <div id="door2" class="door">
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -38,6 +48,11 @@
         <div class="menu andar">
             <p id="nomeAndar">Andar do prédio</p>
             <h1 id="numeroAndar">0</h1>
+
+            <div class="form-inputs">
+                Nome do passageiro: <br>
+                <input id="nomePessoa" type="text" name="name" placeholder="Digite aqui seu nome">
+            </div>
         </div>
 
     </div>
