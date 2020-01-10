@@ -14,16 +14,16 @@
     <div class="container">
 
         <div class="menu">
-            <button onclick="mudarAndar('Primeiro andar', 1, 'red', 'primeiroAndar')">
+            <button onclick="mudarAndar('Primeiro andar', '1º', 'red', 'primeiroAndar')">
                 1
             </button>
-            <button onclick="mudarAndar('Segundo andar', 2, 'blue', 'segundoAndar')">
+            <button onclick="mudarAndar('Segundo andar', '2º', 'blue', 'segundoAndar')">
                 2
             </button>
-            <button onclick="mudarAndar('Terceiro andar', 3, 'green', 'terceiroAndar')">
+            <button onclick="mudarAndar('Terceiro andar', '3º', 'green', 'terceiroAndar')">
                 3
             </button>
-            <button onclick="mudarAndar('Quarto andar', 4, 'orange', 'quartoAndar')">
+            <button onclick="mudarAndar('Quarto andar', '4º', 'orange', 'quartoAndar')">
                 4
             </button>
 
@@ -35,10 +35,10 @@
         <div class="middleArea">
             <div class="box">
                 <div id="miniBox" class="terreo" >
-                    <div id="door1" class="door">
+                    <div id="closeDoor1" class="door">
 
                     </div>
-                    <div id="door2" class="door">
+                    <div id="closeDoor2" class="door">
 
                     </div>
                 </div>
@@ -51,7 +51,7 @@
 
             <div class="form-inputs">
                 Nome do passageiro: <br>
-                <input id="nomePessoa" type="text" name="name" placeholder="Digite aqui seu nome">
+                <input id="nomePessoa" type="text" name="name" placeholder="Digite aqui seu nome" onkeyup="abreFecha()">
             </div>
         </div>
 

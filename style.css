@@ -44,7 +44,7 @@ body {
     overflow: hidden;
 }
 
-#door1, #door2{
+#closeDoor1, #closeDoor2{
     background-color: black;
     width: 35px;
     height: 100px;

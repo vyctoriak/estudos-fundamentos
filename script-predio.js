@@ -1,12 +1,34 @@
+// Função que abre e fecha as portas quando carrega a aplicação
+// window.onload(abreFechaPortas());
+
+// function abreFecha() {
+//     abrePortas();
+//     fechaPortas();
+// }
+
+//Animação pra abrir e fechar portas
+function abrePortas() {
+    setTimeout(function fecharPortas() {
+        trocaClasse('open-left', 'closeDoor1');
+        trocaClasse('open-rigth', 'closeDoor2');
+    }, 1000)
+}
+
+function fechaPortas() {
+    setTimeout(function () {
+        trocaClasse('door', 'closeDoor1');
+        trocaClasse('door', 'closeDoor2');
+    }, 2000)
+}
 
 // Função do onclick
 function mudarAndar(value, number, color, classe) {
     var pessoas = document.getElementById('nomePessoa');
     if (pessoas.value) {
-        setTimeout(abreFechaPortas(), 10000);
+        abrePortas();
+        fechaPortas();
         trocaNomeAndar(value);
-        setTimeout(trocaClasse(classe, "miniBox"), 10000);
-        // trocaClasse(classe, "miniBox");
+        trocaClasse(classe, "miniBox");
         trocaNumeroECor(number, color);
         incluirPassageiro(number)
     } else {
@@ -16,8 +38,10 @@ function mudarAndar(value, number, color, classe) {
 
 // Função que muda a classe, faz o elevador subir e descer
 function trocaClasse(classe, id) {
-    var mudarClasse = document.getElementById(id);
-    mudarClasse.className = classe;
+    setInterval(function changeClass() {
+        var mudarClasse = document.getElementById(id);
+        mudarClasse.className = classe;
+    }, 2000)
 }
 
 // Função que muda o número do andar e a cor 
@@ -49,25 +73,13 @@ function incluirPassageiro(number) {
         var t = document.createTextNode(`${passageiro.value} está no ${number} andar`);
         h.appendChild(t);
         document.getElementById('pessoaElevador').appendChild(h);
-
         passageiro = document.getElementById('nomePessoa').value = '';
     }
 }
 
-//Animação pra abrir e fechar portas
-function abreFechaPortas() {
-    trocaClasse('open-left', 'door1');
-    trocaClasse('open-rigth', 'door2');
-
-    setTimeout(function fecharPortas() {
-        trocaClasse('door', 'door1');
-        trocaClasse('door', 'door2');
-    }, 1000)
-}
 
 // Validação se as portas estão abertas
 function validarPortas() {
     if (abreFechaPortas == true) {
-
     }
 }
